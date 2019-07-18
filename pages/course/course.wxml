@@ -1,0 +1,18 @@
+<view>
+课程（夏令营）
+</view>
+
+<view class="top_select">
+  <view class="sear_item">分类</view>
+  <view class="sear_item">日期</view>
+  <view class="sear_item">年龄</view>
+</view>
+
+<view wx:if="{{!items}}">
+  <view class="offline-notice">拼命加载中...</view>
+</view>
+
+<view wx:elif="{{items.length === 0}}">
+  <view class="offline-notice">没有商品</view>
+</view>
+
