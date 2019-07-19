@@ -1,1 +1,21 @@
 <view>这个是首页</view>
+
+
+
+<view wx: elif="{{items.length > 0}}">
+  <scroll-view scroll-y="true" height="100%">
+    <view class='item-container'>
+      <block wx: for="{{ items }}" wx:for-item="item" wx:key="id">
+        <view class="item" data-id="{{item.id}}">
+        <view class="sports_image" catchtap="catchTapOnItem" data-id="{{item.id}}">
+          <image class="sports_img" src="{{item.sports.imgurl}}"></image>
+        </view>
+        <view class="sports_title">
+          {{ item.sports.title }}
+        </view>
+
+      </view>
+      </block>
+    </view>
+  </scroll-view>
+</view >

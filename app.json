@@ -15,20 +15,20 @@
     "list":[
       {
         "text":"体验课",
-        "iconPath": "images/home.png",
-        "selectedIconPath": "images/home_selected.png",
+        "iconPath": "images/common/home.png",
+        "selectedIconPath": "images/common/home_selected.png",
         "pagePath":"pages/home/home"
       },
       {
         "text": "课程",
-        "iconPath": "images/course.png",
-        "selectedIconPath": "images/course_selected.png",
+        "iconPath": "images/common/course.png",
+        "selectedIconPath": "images/common/course_selected.png",
         "pagePath": "pages/index/index" 
       },
       {
         "text": "我的",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/my_selected.png",
+        "iconPath": "images/common/my.png",
+        "selectedIconPath": "images/common/my_selected.png",
         "pagePath": "pages/logs/logs"
       }
     ]
