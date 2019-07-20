@@ -18,7 +18,7 @@
               <view wx:if="{{type_sports.sports.length>0}}">
               <view class="one_type_sports">
                 <block wx:for="{{ type_sports.sports }}" wx:for-item="sport" wx:key="index">
-                  <view class="one_sport">
+                  <view class="one_sport" hover-class='sport_click_sty'>
                     <image class="sport_img" src="../../{{sport.imgurl}}" 
                       style='width: 40px; height: 40px;'></image>
                     <text class="sports_name">{{sport.name}}</text>

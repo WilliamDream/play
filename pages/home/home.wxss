@@ -31,9 +31,13 @@
   
 }
 
-
+.sport_click_sty {
+  opacity: 0.5;
+  background: #06d5fab9;
+}
 
 .one_sport text {
   padding-top: 20rpx;
   font-size: 25rpx;
 }
+
