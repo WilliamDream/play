@@ -1,20 +1,36 @@
-<view>这个是首页</view>
 
+<view wx:if="{{!allsports}}">
+  <view class="offline-notice">拼命加载中...</view>
+</view>
 
+<view wx:elif="{{allsports.length === 0}}">
+  <view class="offline-notice">没有找到...</view>
+</view>
 
-<view wx: elif="{{items.length > 0}}">
+<view wx: elif="{{allsports.length > 0}}">
   <scroll-view scroll-y="true" height="100%">
-    <view class='item-container'>
-      <block wx: for="{{ items }}" wx:for-item="item" wx:key="id">
-        <view class="item" data-id="{{item.id}}">
-        <view class="sports_image" catchtap="catchTapOnItem" data-id="{{item.id}}">
-          <image class="sports_img" src="{{item.sports.imgurl}}"></image>
-        </view>
-        <view class="sports_title">
-          {{ item.sports.title }}
-        </view>
-
-      </view>
+    <view class='sports-container'>
+      <block wx:for="{{ allsports }}" wx:for-item="type_sports" wx:key="index">
+        <!-- <view wx:if="{{index==0||index%3!=0}}" > -->
+          <view class="type_sports" data-id="{{type_sports.index}}" >
+            <text class="type_name">{{type_sports.name}}</text>
+            <view class="sports">
+              <view wx:if="{{type_sports.sports.length>0}}">
+              <view class="one_type_sports">
+                <block wx:for="{{ type_sports.sports }}" wx:for-item="sport" wx:key="index">
+                  <view class="one_sport">
+                    <image class="sport_img" src="../../{{sport.imgurl}}" 
+                      style='width: 40px; height: 40px;'></image>
+                    <text class="sports_name">{{sport.name}}</text>
+                  </view> 
+                </block>
+                </view>
+              </view>
+              
+            </view>
+            
+          </view>
+        <!-- </view> -->
       </block>
     </view>
   </scroll-view>

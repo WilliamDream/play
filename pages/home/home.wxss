@@ -1,0 +1,39 @@
+
+
+.sports-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.type_sports {
+   width: 100%;
+
+
+}
+
+.type_name {
+  padding-top: 20rpx;
+  font-size: 25rpx;
+}
+
+.one_type_sports {
+  /* width: 100%; */
+   display: flex;
+   flex-direction: row;
+}
+.one_sport {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding: 20rpx;
+  
+}
+
+
+
+.one_sport text {
+  padding-top: 20rpx;
+  font-size: 25rpx;
+}
