@@ -1,3 +1,5 @@
+var app = getApp()
+
 Page({
   data: {
     allsports: [
@@ -5,6 +7,10 @@ Page({
         name: "球类运动", typeId: 1, sports: [
           { name: "篮球", sportId: 1, imgurl: "images/sports/basketball.png" },
           { name: "足球", sportId: 2, imgurl: "images/sports/football.png" },
+          { name: "乒乓球", sportId: 3, imgurl: "images/sports/pingpong.png" },
+          { name: "羽毛球", sportId: 4, imgurl: "images/sports/badminton.png" },
+          { name: "网球", sportId: 5, imgurl: "images/sports/tennisball.png" },
+          { name: "排球", sportId: 6, imgurl: "images/sports/volleyball.png" },
           { name: "乒乓球", sportId: 3, imgurl: "images/sports/pingpong.png" },
           { name: "羽毛球", sportId: 4, imgurl: "images/sports/badminton.png" },
           { name: "网球", sportId: 5, imgurl: "images/sports/tennisball.png" },
@@ -39,11 +45,77 @@ Page({
 
 
 
-
-
-
     ]
   },
 
+  /**
+   * 打开体验详情页面
+   */
+  showExerience: function(e){
+    var data = e.currentTarget.dataset
+    
+    app.globalData.currentCateType = { sportId: data.sportId }
+    console.log(data);
+    wx.redirectTo({
+      url: "../exeriences/exeriences"
+    })
+
+  },
+
+  /**
+ * 生命周期函数--监听页面加载
+ */
+  onLoad: function (options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  }
 
 })

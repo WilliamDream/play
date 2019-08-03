@@ -18,17 +18,17 @@
 }
 
 .one_type_sports {
-  /* width: 100%; */
+   width: 100%; 
    display: flex;
    flex-direction: row;
 }
 .one_sport {
-  width: 25%;
-  display: flex;
+  width: 50px;
+  display:block;
   align-items: center;
   flex-direction: column-reverse;
   padding: 20rpx;
-  
+  text-align: center;
 }
 
 .sport_click_sty {

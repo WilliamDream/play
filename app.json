@@ -2,12 +2,15 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/home/home"
+    "pages/home/home",
+    "pages/exeriences/exeriences",
+    "pages/exerdetail/exerdetail",
+    "pages/course/course"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "体育",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

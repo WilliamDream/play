@@ -1,0 +1,50 @@
+.exerience_container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.one_exerience {
+  width: 100%;
+  height: 205px;
+  margin-bottom: 5px;
+  background-color: #EEEEEE;
+}
+
+
+
+
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+}
+
+.other_left {
+  flex: 1;
+  align-items: center;
+}
+
+.other_right {
+  position: relative;
+  align-items: center;
+}
+
+.title_exprience {
+  font-size: 30rpx;
+  color: #3C3C3C;
+}
+
+
+.other_msg {
+  display: flex;
+  font-size:23rpx;
+  color: #808080;
+}
+
+.date_exprience {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
