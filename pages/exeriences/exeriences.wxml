@@ -12,7 +12,7 @@
     <view class='exerience_container'>
       <block wx:for="{{ exeriences }}" wx:for-item="exerience" wx:key="index">
         <!-- <view wx:if="{{index==0||index%3!=0}}" > -->
-          <view class="one_exerience" data-id="{{exerience.index}}" >
+          <view class="one_exerience" data-id="{{exerience.index}}" catchtap="showExerienceDetail">
             <image class="sport_img" src="../../{{exerience.imgurl}}" 
                       style='width: 100%; height: 150px;'></image>
                       <view class="title_exprience"><text>{{exerience.title}}</text></view>

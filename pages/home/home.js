@@ -56,7 +56,7 @@ Page({
     
     app.globalData.currentCateType = { sportId: data.sportId }
     console.log(data);
-    wx.redirectTo({
+    wx.navigateTo({
       url: "../exeriences/exeriences"
     })
 

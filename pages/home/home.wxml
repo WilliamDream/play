@@ -6,8 +6,6 @@
 <view wx:elif="{{allsports.length === 0}}">
   <view class="offline-notice">没有找到...</view>
 </view>
-<navigator url="../exeriences/exeriences" open-type="navigate" hover-class="navigator-hover">
-<button>跳转到新页面</button></navigator> 
 
 <view wx: elif="{{allsports.length > 0}}">
   <scroll-view scroll-y="true" height="100%">

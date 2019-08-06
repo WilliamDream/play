@@ -16,7 +16,20 @@ Page({
     ]
   },
 
+  
+    /**
+   * 打开体验详情页面
+   */
+  showExerienceDetail: function(e) {
+    var data = e.currentTarget.dataset
 
+    app.globalData.currentCateType = { sportId: data.sportId }
+    console.log(data);
+    wx.navigateTo({
+      url: "../exerdetail/exerdetail"
+    })
+
+  },
 
   /**
  * 生命周期函数--监听页面加载

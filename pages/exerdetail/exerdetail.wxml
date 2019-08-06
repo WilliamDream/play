@@ -1,2 +1,21 @@
-<!--pages/exerdetail/exerdetail.wxml-->
-<text>pages/exerdetail/exerdetail.wxml</text>
+<view wx:if="{{!exerdetail}}">
+  <view class="offline-notice">拼命加载中...</view>
+</view>
+
+<view wx:elif="{{exerdetail.length === 0}}">
+  <view class="offline-notice">没有找到...</view>
+</view>
+
+<view wx: elif="{{exerdetail.length > 0}}">
+  <view class="detail_container">
+    <scroll-view class='scroll_imgs' scroll-x="true">
+      <image wx:for="{{exerdetail.descimgs}}" wx:key="{{index}}" src='../../{{item.imgurl}}' bindtap='img' mode="aspectFill" data-url='{{item.imgurl}}'></image>
+    </scroll-view>
+    
+  
+  
+  </view>
+</view>
+
+
+
