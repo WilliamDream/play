@@ -8,9 +8,16 @@
 
 <view wx: elif="{{exerdetail.length > 0}}">
   <view class="detail_container">
-    <scroll-view class='scroll_imgs' scroll-x="true">
-      <image wx:for="{{exerdetail.descimgs}}" wx:key="{{index}}" src='../../{{item.imgurl}}' bindtap='img' mode="aspectFill" data-url='{{item.imgurl}}'></image>
-    </scroll-view>
+    <swiper class='swiper_imgs' indicator-dots="true" autoplay="true" interval="4000" duration="300">
+      <block wx:for="{{exerdetail.descimgs}}" wx:for-item="descimg">
+        <swiper-item>
+          <image  wx:key="{{index}}" src='../../{{descimg.imgurl}}' bindtap='img' mode="aspectFill" data-url='{{descimg.imgurl}}' ></image>
+        </swiper-item>
+      
+      </block>
+    </swiper>
+      
+    
     
   
   

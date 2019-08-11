@@ -30,11 +30,11 @@ Page({
       var imgs = that.data.exerdetail.descimgs[i].imgurl
       all_pic.push(imgs)
     }
-
-    wx.previewImage({
-      current: url, // 当前显示图片的http链接
-      urls: all_pic // 需要预览的图片http链接列表
-    })
+    //不支持本地图片
+    // wx.previewImage({
+    //   current: url, // 当前显示图片的http链接
+    //   urls: all_pic // 需要预览的图片http链接列表
+    // })
   },
 
 
